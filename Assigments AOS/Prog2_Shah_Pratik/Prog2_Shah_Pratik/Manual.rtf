@@ -1,0 +1,31 @@
+Enviroment:Windows/Linux
+
+How to run the code
+
+
+
+THE code consist of
+* Peer.java
+* build.xml
+* config.properties 
+* ServerNumber.properties 
+ALL KEEP THIS FILES IN SAME FOLDER TO RUN THE CODE SUCCESSFULLY
+
+1)The Source Code file is Peer.java
+2)Enter the IP addresses and port numbers and total number servers in config.properties 
+		eg:serverport0=8104   #server 0 port number 
+		eg:serverIP0=192.168.56.1  #server 0 IP address
+3)Associated with each Peer enter its appropriate server number in ServerNumber.properties files
+	eg:ServerNumber=0  (for Server 0 its number is 0)
+4)RUN THE CODE IN DIFFERENT MACHINES or FROM DIFFERENT FOLDERS (DON'T RUN THE CODE FROM THE SAME FOLDER)
+5)Use ant to build and compile 
+	eg:ant
+6)The Peer has started runing
+
+
+To Generate the jar Files
+Enter the following command:
+ant build-jar 
+
+To Delete  the jar
+ant clean

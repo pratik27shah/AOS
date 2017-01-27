@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <target name="compilemongo" >
+        <mkdir dir="build/classes"/>
+        <javac srcdir="code" destdir="build/classes">
+        
+    </javac>
+    </target>
+ 
+    <target name="testmongo" depends="compilemongo">
+        <mkdir dir="build/jar"/>
+        <jar destfile="build/jar/peer.jar" basedir="build/classes">
+        
+            <manifest>
+                <attribute name="Main-Class" value="Peer"/>
+            </manifest>
+        </jar>
+    </target>
+ 
+    <target name="mongojar" depends="testmongo">
+        <java jar="build/jar/peer.jar" fork="true"/>
+    </target>
+
+
+</project>

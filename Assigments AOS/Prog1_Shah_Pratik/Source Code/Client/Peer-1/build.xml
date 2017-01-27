@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="run"> 
+<target name="run" depends="compile">
+<java classname="ErrorHandler">
+<classpath path="."/></java>
+<java classname="ReadConfig">
+<classpath path="."/>
+</java>
+<java classname="Server_Connection">
+<classpath path="."/>
+</java>
+<java classname="Client_Connection">
+<classpath path="."/>
+</java>
+<java classname="Client">
+<classpath path="."/>
+</java>
+</target>
+<target name="compile" >
+<javac includeantruntime="false" srcdir="." destdir="."/></target>
+</project>

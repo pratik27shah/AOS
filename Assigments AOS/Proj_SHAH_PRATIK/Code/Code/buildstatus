@@ -1,0 +1,15 @@
+ 
+Connecting to EC2 Amazon
+chmod 400 keys.pem
+ssh -i keys.pem ubuntu@54.123.45.12
+ssh-add keys.pem
+Using Pssh for File Transfer
+pscp -h host.txt -t 1000000 -O StrictHostKeyChecking=no -o. config.properties  /home/ubuntu/Peer/build/jar
+
+using Pssh to run scripts:
+chmod +x runscript.sh
+pssh -h host.txt -t 1000000 -O StrictHostKeyChecking=no -o. 'sh ./runscript.sh'
+pssh -h host.txt -t 1000000 -O StrictHostKeyChecking=no -o. 'java -jar peer.jar'
+
+
+

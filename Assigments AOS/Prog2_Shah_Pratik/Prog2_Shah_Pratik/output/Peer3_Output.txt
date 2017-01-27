@@ -1,0 +1,25 @@
+
+Enter Value 1,2,3 or 4 
+ 1.Put 
+ 2.Get 
+ 3.Delete 
+ 4.Close Peer  
+
+Select Choice
+1
+Enter Key Value:
+23
+Enter String  Value
+abc
+Using Hash Table of Server5
+Key/Value Added Successfully
+Error--->Value Not Added
+Enter Value 1,2,3 or 4 
+ 1.Put 
+ 2.Get 
+ 3.Delete 
+ 4.Close Peer  
+
+Select Choice
+4
+Peer-Closed

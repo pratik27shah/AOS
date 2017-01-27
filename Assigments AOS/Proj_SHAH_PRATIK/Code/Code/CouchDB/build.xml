@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <target name="compilecode" >
+        <mkdir dir="build/classes"/>
+        <javac srcdir="code" destdir="build/classes">
+        <classpath>
+           
+       <pathelement path="apache-commons-lang.jar" />
+<pathelement path=" httpcore-4.4.3.jar" />
+<pathelement  path="commons-cli-1.2.jar" />
+<pathelement  path="httpcore-4.4.4.jar" />
+<pathelement path=" httpcore-ab-4.4.4.jar" />
+<pathelement path="commons-codec-1.9.jar" />
+<pathelement path="commons-httpclient-3.1.jar" />
+<pathelement   path=" httpcore-nio-4.4.4.jar" />
+<pathelement  path="httpmime-4.5.1.jar" />
+<pathelement  path="commons-logging-1.2.jar " />
+<pathelement  path="couchdb4j-0.1.2.jar " />
+<pathelement  path="httpclient-win-4.5.1.jar" />
+<pathelement  path="jna-4.1.0.jar" />
+<pathelement  path="ezmorph-1.0.6.jar" />
+<pathelement  path="jna-platform-4.1.0.jar" />
+<pathelement  path="fluent-hc-4.5.1.jar" />
+<pathelement  path="json-lib-2.0-jdk15.jar" />
+<pathelement  path="httpclient-4.5.1.jar" />
+<pathelement  path="httpclient-cache-4.5.1.jar" />
+<pathelement  path="httpclient-cache-4.5.1.jar" />
+<pathelement  path=" org.apache.commons.collections.jar"/>
+<pathelement  path="org.apache.commons.beanutils.jar" />
+        </classpath>
+    </javac>
+    </target>
+
+<target name="testcode" depends="compilecode">
+        <mkdir dir="build/jar"/>
+        <jar destfile="build/jar/peer.jar" basedir="build/classes">
+        <zipgroupfileset dir="jar" includes="apache-commons-lang.jar" />
+<zipgroupfileset dir="jar" includes=" httpcore-4.4.3.jar" />
+<zipgroupfileset dir="jar" includes="commons-cli-1.2.jar" />
+<zipgroupfileset dir="jar" includes="httpcore-4.4.4.jar" />
+<zipgroupfileset dir="jar" includes=" httpcore-ab-4.4.4.jar" />
+<zipgroupfileset dir="jar" includes="commons-codec-1.9.jar" />
+<zipgroupfileset dir="jar" includes="commons-httpclient-3.1.jar" />
+<zipgroupfileset dir="jar" includes=" httpcore-nio-4.4.4.jar" />
+<zipgroupfileset dir="jar" includes="httpmime-4.5.1.jar" />
+<zipgroupfileset dir="jar" includes="commons-logging-1.2.jar " />
+<zipgroupfileset dir="jar" includes="couchdb4j-0.1.2.jar " />
+<zipgroupfileset dir="jar" includes="httpclient-win-4.5.1.jar" />
+<zipgroupfileset dir="jar" includes="jna-4.1.0.jar" />
+<zipgroupfileset dir="jar" includes="ezmorph-1.0.6.jar" />
+<zipgroupfileset dir="jar" includes="jna-platform-4.1.0.jar" />
+<zipgroupfileset dir="jar" includes="fluent-hc-4.5.1.jar" />
+<zipgroupfileset dir="jar" includes="json-lib-2.0-jdk15.jar" />
+<zipgroupfileset dir="jar" includes="httpclient-4.5.1.jar" />
+<zipgroupfileset dir="jar" includes="httpclient-cache-4.5.1.jar" />
+<zipgroupfileset dir="jar" includes=" org.apache.commons.collections.jar"/>
+<zipgroupfileset dir="jar" includes="org.apache.commons.beanutils.jar" />
+            <manifest>
+                <attribute name="Main-Class" value="Main"/>
+            </manifest>
+        </jar>
+    </target>
+ 
+    <target name="runcode" depends="testcode">
+        <java jar="build/jar/peer.jar" fork="true"/>
+         <java jar="peer.jar" fork="true"/>
+    </target>
+
+
+</project>

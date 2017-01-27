@@ -1,0 +1,34 @@
+Run Environment
+1)Any Linux or Windows Machine(8.1 and above)
+2)Machine must be java compatible
+
+REFER TO FILES IN SOURCE CODE ONLY TO RUN THE CODE.
+
+
+Steps:
+						RUN SERVER(DHT)
+1)Copy the Serverconfig.properties and config.properties with the build.xml and DHT_Server.java in one folder
+2)Make sure every ServerNumber in Serverconfig.properties must be unique for every server
+	eg:for DHT_Server 1 the number will be  ServerNumber=1 for DHT_Server 2 the number will be  ServerNumber=2
+3)Make sure that the config.properties file has all the Server IPs and ports
+4)now type "ant" on terminal to run the DHT_Server
+5)Add the serversIP(serverIP) and Port(serverpor) int the config.properties file for the respective ServerNumber.
+6)To generate jar type ant build-jar and to clean it ant clean
+
+					Peer(Client)
+1)Copy the Serverconfig.properties and config.properties with the build.xml and Client.java in one folder
+2)Make sure every ServerNumber in Serverconfig.properties must be unique for every server
+	eg:for Client 1 the number will be  ServerNumber=1 for Client2 the number will be  ServerNumber=2
+3)now type "ant" on terminal to run the Client
+4)Add the Client(peerport) int the config.properties file for the respective ServerNumber. 6)To generate jar type ant build-jar and to clean it ant clean
+
+
+
+Add the total number of Peers and DHT Servers in the config.properties also add the PeerIP for 
+Replcaition in config.properties.
+
+All the config.properties must be consistent
+The Transfer_Size cannot be changes it is fixed to 4096
+Replication Factor can be changed but  must be the same in all files for runing the code.
+
+NOTE:AFTER REPLICATING  A FILE TO A PARTICULAR SERVER,THE UPDATE MUST BE MADE TO SERVER BY PRESSING 4

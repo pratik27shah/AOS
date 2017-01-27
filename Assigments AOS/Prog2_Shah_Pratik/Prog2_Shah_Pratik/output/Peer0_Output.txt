@@ -1,0 +1,76 @@
+
+Enter Value 1,2,3 or 4 
+ 1.Put 
+ 2.Get 
+ 3.Delete 
+ 4.Close Peer  
+
+Select Choice
+1
+Enter Key Value:
+1234567890
+Enter String  Value
+pratik
+Using Hash Table of Server5
+Key/Value Added Successfully
+Error--->Value Not Added
+Enter Value 1,2,3 or 4 
+ 1.Put 
+ 2.Get 
+ 3.Delete 
+ 4.Close Peer  
+
+Select Choice
+2
+Enter Key Value:
+abc
+Using Hash Table of Server6
+Value is --->def
+Enter Value 1,2,3 or 4 
+ 1.Put 
+ 2.Get 
+ 3.Delete 
+ 4.Close Peer  
+
+Select Choice
+1
+Enter Key Value:
+pqr
+Enter String  Value
+xyz
+Using Hash Table of Server3
+Key/Value Added Successfully
+Error--->Value Not Added
+Enter Value 1,2,3 or 4 
+ 1.Put 
+ 2.Get 
+ 3.Delete 
+ 4.Close Peer  
+
+Select Choice
+2
+Enter Key Value:
+23
+Using Hash Table of Server5
+Value is --->abc
+Enter Value 1,2,3 or 4 
+ 1.Put 
+ 2.Get 
+ 3.Delete 
+ 4.Close Peer  
+
+Select Choice
+2
+Enter Key Value:
+1756
+Using Hash Table of Server3
+Value is --->iitc
+Enter Value 1,2,3 or 4 
+ 1.Put 
+ 2.Get 
+ 3.Delete 
+ 4.Close Peer  
+
+Select Choice
+4
+Peer-Closed

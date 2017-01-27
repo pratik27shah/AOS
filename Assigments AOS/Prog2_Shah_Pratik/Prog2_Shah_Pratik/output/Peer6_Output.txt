@@ -1,0 +1,97 @@
+
+Enter Value 1,2,3 or 4 
+ 1.Put 
+ 2.Get 
+ 3.Delete 
+ 4.Close Peer  
+
+Select Choice
+2
+Enter Key Value:
+1234567890
+Using Hash Table of Server5
+Value is --->pratik
+Enter Value 1,2,3 or 4 
+ 1.Put 
+ 2.Get 
+ 3.Delete 
+ 4.Close Peer  
+
+Select Choice
+2
+Enter Key Value:
+1
+Using Hash Table of Server1
+Value is --->1
+Enter Value 1,2,3 or 4 
+ 1.Put 
+ 2.Get 
+ 3.Delete 
+ 4.Close Peer  
+
+Select Choice
+3
+Enter Key Value:
+1
+Using Hash Table of Server1
+Key/Value Deleted Successfully
+Error--->Value Not deleted/not found at server
+Enter Value 1,2,3 or 4 
+ 1.Put 
+ 2.Get 
+ 3.Delete 
+ 4.Close Peer  
+
+Select Choice
+2
+Enter Key Value:
+pqr
+Using Hash Table of Server3
+Value is --->xyz
+Enter Value 1,2,3 or 4 
+ 1.Put 
+ 2.Get 
+ 3.Delete 
+ 4.Close Peer  
+
+Select Choice
+3
+Enter Key Value:
+pqr
+Using Hash Table of Server3
+Key/Value Deleted Successfully
+Error--->Value Not deleted/not found at server
+Enter Value 1,2,3 or 4 
+ 1.Put 
+ 2.Get 
+ 3.Delete 
+ 4.Close Peer  
+
+Select Choice
+1
+Enter Key Value:
+2
+Enter String  Value
+2
+Using Hash Table of Server2
+Key/Value Added Successfully
+Enter Value 1,2,3 or 4 
+ 1.Put 
+ 2.Get 
+ 3.Delete 
+ 4.Close Peer  
+
+Select Choice
+3
+Enter Key Value:
+23
+Using Hash Table of Server5
+Error--->Value Not deleted/not found at server
+Enter Value 1,2,3 or 4 
+ 1.Put 
+ 2.Get 
+ 3.Delete 
+ 4.Close Peer  
+
+Select Choice
+Peer-Closed

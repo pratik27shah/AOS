@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <target name="compilecode" >
+        <mkdir dir="build/classes"/>
+        <javac srcdir="code" destdir="build/classes">
+ <classpath>
+            <pathelement path="jar/jedis-2.8.0.jar"/> 
+        </classpath>
+        
+    </javac>
+    </target>
+ 
+    <target name="testcompile" depends="compilecode">
+        <mkdir dir="build/jar"/>
+        <jar destfile="build/jar/redis.jar" basedir="build/classes">
+        <zipgroupfileset dir="jar" includes="jedis-2.8.0.jar" />
+            <manifest>
+                <attribute name="Main-Class" value="redis"/>
+            </manifest>
+        </jar>
+    </target>
+ 
+    <target name="testrun" depends="testcompile">
+        <java jar="build/jar/redis.jar" fork="true"/>
+    </target>
+
+
+</project>

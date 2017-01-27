@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="run"> 
+<target name="run" depends="compile">
+<java classname="Client">
+<classpath path="."/>
+</java>
+<java classname="Client_Connection">
+<classpath path="."/>
+</java>
+<java classname="Get_Server_IP_Hash">
+<classpath path="."/>
+</java>
+<java classname="Server_Connection">
+<classpath path="."/>
+</java>
+
+<java classname="Sockets_Functions">
+<classpath path="."/>
+</java>
+<java classname="ReadConfig">
+<classpath path="."/>
+</java>
+
+
+<java classname="ServerReadConfig">
+<classpath path="."/>
+</java>
+
+<java classname="ErrorHandler">
+<classpath path="."/>
+</java>
+
+
+</target>
+<target name="compile" >
+<javac includeantruntime="false" target="7" source="7" srcdir="." destdir="."/></target>
+<target name="build-jar">
+<jar basedir="." destfile="Client.jar">
+<manifest>
+<attribute name="Built-By" value="${builder}"/> 
+<attribute name="Built-On" value="${build-info.current-time}"/> 
+<attribute name="Built-At" value="${build-info.current-time}"/> 
+</manifest></jar>
+</target>
+
+<target name="clean">
+<delete file="Client.jar"/>
+</target>
+</project>
